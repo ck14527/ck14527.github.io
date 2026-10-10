@@ -25,12 +25,6 @@ B.S. in Mathematics and Applied Mathematics, September 2022 - June 2026
 - Outstanding Graduate of Shanghai Regular Higher Education Institutions, Class of 2026
 - Bachelor of Science with Honors in Mathematics
 
-## Research Experience
-
-- **Optimal Recursive Stepsize Design for Gradient Descent**, July 2026 - present
-- **Exact Time-Uniform Convergence Frontier of Stochastic Gradient Descent**, April 2026 - present
-- **Tight Time-Uniform Convergence Analysis of Stochastic Gradient Descent**, May 2025 - March 2026
-
 ## Publications and Preprints
 
 {% assign papers = site.publications | sort: 'date' | reverse %}
