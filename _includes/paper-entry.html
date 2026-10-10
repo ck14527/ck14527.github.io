@@ -1,0 +1,8 @@
+{% assign paper = include.paper %}
+<article class="paper-entry">
+  <h3><a href="{{ paper.url | relative_url }}">{{ paper.title }}</a></h3>
+  <p class="paper-authors">{{ paper.authors | replace: 'Kang Chen', '<strong>Kang Chen</strong>' }}</p>
+  <p class="paper-venue"><em>{{ paper.venue }}</em>{% if paper.volume %}, {{ paper.volume }}, {{ paper.article_number }}{% endif %}, {{ paper.date | date: '%Y' }}{% if paper.arxiv %} &middot; arXiv:{{ paper.arxiv }}{% endif %}</p>
+  <p>{{ paper.summary }}</p>
+  <p class="paper-links">{% if paper.doi %}<a href="https://doi.org/{{ paper.doi }}">Journal article</a> &middot; {% endif %}{% if paper.arxiv %}<a href="https://arxiv.org/abs/{{ paper.arxiv }}">arXiv</a> &middot; <a href="https://arxiv.org/pdf/{{ paper.arxiv }}">PDF</a> &middot; {% endif %}<a href="{{ paper.bibtexurl | relative_url }}">BibTeX</a></p>
+</article>

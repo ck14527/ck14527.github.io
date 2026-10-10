@@ -16,7 +16,9 @@
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-32x32.png" sizes="32x32"/>
 <link rel="icon" type="image/png" href="{{ base_path }}/images/favicon-192x192.png" sizes="192x192"/>
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
-<link rel="icon" href="/images/favicon.ico"/>
+<link rel="icon" href="{{ "/images/favicon.ico" | relative_url }}"/>
 <meta name="theme-color" content="var(--global-bg-color)"/>
+
+<link rel="stylesheet" href="{{ "/assets/css/personal.css" | relative_url }}">
 
 <!-- end custom head snippets -->

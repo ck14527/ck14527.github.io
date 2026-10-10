@@ -1,64 +1,54 @@
 ---
-layout: archive
-title: "CV"
+layout: single
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+**Kang Chen** (陈康)<br>
+Ph.D. student in Mathematics, Fudan University<br>
+Probability and Mathematical Statistics<br>
+[kchen26@m.fudan.edu.cn](mailto:kchen26@m.fudan.edu.cn) &middot; [ORCID](https://orcid.org/0009-0007-1041-7626)
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Education
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+**Shanghai Center for Mathematical Sciences, Fudan University**<br>
+Ph.D. in Mathematics, September 2026 - June 2031 (expected)<br>
+Specialization: Probability and Mathematical Statistics
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+**School of Mathematical Sciences, Fudan University**<br>
+B.S. in Mathematics and Applied Mathematics, September 2022 - June 2026
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+- GPA: 3.85/4.00; rank: 7/209 (top 5%)
+- Outstanding Graduate of Shanghai Regular Higher Education Institutions, Class of 2026
+- Bachelor of Science with Honors in Mathematics
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Research Experience
+
+- **Optimal Recursive Stepsize Design for Gradient Descent**, July 2026 - present
+- **Exact Time-Uniform Convergence Frontier of Stochastic Gradient Descent**, April 2026 - present
+- **Tight Time-Uniform Convergence Analysis of Stochastic Gradient Descent**, May 2025 - March 2026
+
+## Publications and Preprints
+
+{% assign papers = site.publications | sort: 'date' | reverse %}
+{% for paper in papers %}
+{% include paper-entry.html paper=paper %}
+{% endfor %}
+
+## Honors and Awards
+
+- **Qiguang Scholarship**, School of Mathematical Sciences, Fudan University, December 2025
+- **Top Student Award**, School of Mathematical Sciences, Fudan University, October 2025
+- **Undergraduate Scholarship for Basic Disciplines**, Fudan University, December 2025
+- **Finalist Winner**, Mathematical Contest in Modeling (MCM), May 2025
+- **Shanghai Second Prize**, China Undergraduate Mathematical Contest in Modeling (CUMCM), December 2024
+- **Fang Jianghui Scholarship**, School of Mathematical Sciences, Fudan University, December 2024
+- **Shanghai Second Prize**, 15th Chinese Mathematical Competitions for College Students (Category A), December 2023
+
+## Skills
+
+- **Programming:** C, C++, Python. Excellent, Level 3, Shanghai College Information Technology Level Examination (C).
+- **Languages:** Chinese (native); English (CET-6: 566/710).

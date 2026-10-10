@@ -1,0 +1,26 @@
+/* Small refinements to the existing Academic Pages theme. */
+.paper-entry { margin: 1.5em 0 1.8em; }
+.paper-entry h3 { margin-bottom: .45em; font-size: 1.05em; line-height: 1.45; }
+.paper-entry p { margin-bottom: .5em; }
+.paper-entry .paper-authors, .paper-entry .paper-venue, .paper-entry .paper-links { font-size: .9em; }
+.paper-entry .paper-venue { color: var(--global-text-color); }
+.page__content a, .paper-entry h3 a { overflow-wrap: anywhere; }
+.page__content h2 { margin-top: 1.8em; }
+.author__bio { line-height: 1.6; }
+@media (max-width: 767px) { .paper-entry { margin: 1.25em 0 1.6em; } }
+
+/* Keep the footer after the content at every viewport width. */
+.page__footer { position: relative; bottom: auto; float: none; color: var(--global-text-color); }
+body { margin-bottom: 0 !important; padding-bottom: 0; }
+.author__urls-wrapper .btn { color: var(--global-text-color) !important; background-color: var(--global-bg-color) !important; border: 1px solid var(--global-border-color); opacity: 1; }
+
+html:not([data-theme="dark"]) {
+  --global-link-color: #246e89;
+  --global-link-color-hover: #184f64;
+  --global-link-color-visited: #246e89;
+}
+
+/* Short pages need enough height for the fixed author sidebar. */
+@media screen and (min-width: 925px) {
+  #main { min-height: 560px; }
+}
