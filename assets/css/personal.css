@@ -24,3 +24,5 @@ html:not([data-theme="dark"]) {
 @media screen and (min-width: 925px) {
   #main { min-height: 560px; }
 }
+
+.author__urls .author__email { white-space: normal; overflow-wrap: anywhere; }
